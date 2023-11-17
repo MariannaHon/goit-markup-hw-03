@@ -12,6 +12,8 @@ body {
 .bottom .logo .black {
     color: #f4f4fd;
     font-family: 'Raleway', sans-serif;
+}
+.logo-bottom {
     display: inline-block;
     margin-bottom: 16px;
 }
@@ -295,6 +297,7 @@ img {
     align-self: stretch;
     padding-bottom: 32px;
     border: 1px solid #e7e9fc;
+    border-top: none;
 }
 .list-portfolio .small-title {
     font-size: 20px;
@@ -328,7 +331,6 @@ img {
     width: 264px;
     height: 112px;
     flex-shrink: 0;
-    padding: 100px 0;
 }
 .bottom .paragraf {
     color:#F4F4FD;
@@ -340,6 +342,7 @@ img {
 }
 .bottom {
     background: #2E2F42;
+    padding: 100px 0;
 }
 
 
@@ -392,7 +395,6 @@ header .container {
     width: 1440px;
     height: 312px;
     flex-shrink: 0;
-    padding: 100px 0;
 }
 .section {
     padding-top: 120px;
