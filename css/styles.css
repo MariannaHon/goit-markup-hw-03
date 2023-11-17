@@ -25,6 +25,8 @@ body {
     height: 24px;
     align-items: center;
     flex-shrink: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 /* Header */
@@ -35,7 +37,6 @@ body {
     align-items: flex-start;
     gap: 40px;
     margin-left: 76px;
-    margin-right: 332px;
 }
 .item-nav {
     width: calc((100% - 80px) / 3);
@@ -46,6 +47,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .button-nav:hover {
     color:#404BBF;
@@ -76,11 +79,14 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .list-contacts {
     display: inline-flex;
     align-items: flex-start;
-    gap: 40px;
+    column-gap: 40px;
+    margin-left: 332px;
 }
 .item-contacts {
     width: calc((100% - 40px) / 2);
@@ -109,6 +115,7 @@ ul, ol {
 }
 a {
     text-decoration: none;
+    display: block;
 }
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
@@ -116,6 +123,7 @@ h1, h2, h3, h4, h5, h6, p {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 /* Section 1 */
 .title {
@@ -165,8 +173,16 @@ img {
 }
 /* Section 2 (Benefits) */
 .hiding {
-    color:#FFF;
-    text-align: center;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .list-benefits {
     gap: 24px;
@@ -199,6 +215,9 @@ img {
     display: flex;
     flex-direction: row;
     gap: 24px;
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 .item {
     display: inline-flex;
@@ -291,7 +310,6 @@ img {
     text-transform: capitalize;
     text-align: center;
     color: #2e2f42;
-    padding-top: 120px;
     margin-bottom: 72px;
 }
 
@@ -324,14 +342,15 @@ img {
     background-color: #FFFFFF;
 }
 .container {
-    max-width: 100%;
-    margin-left: 156px;
-    margin-right: 156px;
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 header .container {
     display: flex;
     width: 1440px;
     height: 72px;
+    justify-content: center;
     align-items: center;
     flex-shrink: 0;
 }
@@ -341,25 +360,25 @@ header .container {
     flex-shrink: 0;
 }
 .block-benefits .container {
-    margin-top: 120px;
-    margin-bottom: 120px;
     width: 1128px;
     height: 104px;
     flex-shrink: 0;
 }
 .block-second .container {
     width: 1440px;
-    height: 732px;
     flex-shrink: 0;
 }
 .block-portfolio .container {
     width: 1128px;
     height: 1000px;
     flex-shrink: 0;
-    margin-bottom: 120px;
 }
 .bottom .container {
     width: 1440px;
     height: 312px;
     flex-shrink: 0;
+}
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
