@@ -366,6 +366,7 @@ header .container {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    border-bottom: 1px solid #e7e9fc;
 }
 .block .container {
     width: 1440px;
@@ -378,6 +379,7 @@ header .container {
     width: 1128px;
     height: 104px;
     flex-shrink: 0;
+    padding: 120px 0;
 
 .block-portfolio .container {
     width: 1128px;
@@ -396,10 +398,9 @@ header .container {
 .menu .container {
     width: 1158px;
     display: flex;
-}
-.menu {
     border-bottom: 1px solid #e7e9fc;
 }
+
 .block-second {
     width: 1158px;
     padding: 0 15px;
